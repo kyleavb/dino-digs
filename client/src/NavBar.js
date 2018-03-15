@@ -1,15 +1,18 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+import { AppBar } from 'material-ui'
 
 const NavBar = (props) => (
-  <div>
+  <AppBar title='Dino Diggz'>
     <nav>
-      <ul>
-        <li><a href='#'>Home</a></li>{' '}
-        <li><a href='#'>Search</a></li>{' '}
-        <li><a href='#'>Bookings</a></li>{' '}
-        <li><a href='#'>Login</a></li>
+      <ul className="">
+        <Link to='/'>Home</Link>
       </ul>
     </nav>
-  </div>
+  </AppBar>
 )
 export default NavBar
