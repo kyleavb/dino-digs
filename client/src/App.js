@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './App.css'
-import NavBar from './NavBar'
+import './App.css';
+import NavBar from './NavBar';
+import UserProfile from './UserProfile';
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <h1> Dino Diggz</h1>
+        <UserProfile />
       </div>
     );
   }
