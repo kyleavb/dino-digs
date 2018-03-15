@@ -12,7 +12,6 @@ import Search from './Search'
 import Signup from './Signup'
 import UserProfile from './UserProfile'
 
-
 class App extends Component {
   constructor(){
     super()
@@ -49,6 +48,7 @@ class App extends Component {
           </div>
         </Router>
       </MuiThemeProvider>
+
     );
   }
 }
