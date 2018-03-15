@@ -8,19 +8,14 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-      //state
 
     }
-  }
-
-  componentDidMount(){
-
   }
 
   render() {
     return (
       <MuiThemeProvider>
-      <NavBar />
+        <NavBar />
       </MuiThemeProvider>
 
     );
