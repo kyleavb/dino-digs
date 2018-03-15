@@ -6,10 +6,10 @@ const caves = {
   // api_key: process.env.REACT_APP_TMDB_API_KEY,
   cave: [
     {
-      "id": 346364,
+      "id": 1,
       "title": "Get Out!",
       "type": "studio",
-      "image_path": "../img/some.jpg",
+      "image_path": "../img/cave-dwellings-la-1.jpeg",
       "overview": "In a small town in Pebble.",
       "location": "Boulder City",
       "number_of_guests": 2,
@@ -20,10 +20,10 @@ const caves = {
       "host_id": 1
     },
     {
-      "id": 613245,
+      "id": 2,
       "title": "Movin on up",
       "type": "penthouse",
-      "image_path": "../img/some.jpg",
+      "image_path": "../img/cave-dwellings-la-2.jpeg",
       "overview": "Reconnect with nature and disconnect from technology on your own private deck surrounded by pristine and untouched nature.",
       "location": "Scavenge Town",
       "number_of_guests": 3,
@@ -34,10 +34,10 @@ const caves = {
       "host_id": 1
     },
     {
-      "id": 123245,
+      "id": 3,
       "title": "Ruffing It",
       "type": "camper",
-      "image_path": "../img/some.jpg",
+      "image_path": "../img/cave-bedroom.jpg",
       "overview": "Escape civilization to this incredible and peaceful getaway!",
       "location": "Club Park",
       "number_of_guests": 5,
@@ -48,10 +48,94 @@ const caves = {
       "host_id": 2
     },
     {
-      "id": 987245,
+      "id": 4,
       "title": "Dingo Dango",
       "type": "apartment",
-      "image_path": "../img/some.jpg",
+      "image_path": "../img/cave-dwellings-portland-2.jpeg",
+      "overview": "The apartment is large and with lots of sunlight.",
+      "location": "Fire Hot",
+      "number_of_guests": 5,
+      "number_of_baths": 1,
+      "number_of_beds": 1,
+      "amenities": "TV",
+      "cave_rules": "Not suitable for pets",
+      "host_id": 2
+    },
+    {
+      "id": 5,
+      "title": "Dingo Dango",
+      "type": "apartment",
+      "image_path": "../img/cave-dwellings-portland-1.jpg",
+      "overview": "The apartment is large and with lots of sunlight.",
+      "location": "Fire Hot",
+      "number_of_guests": 5,
+      "number_of_baths": 1,
+      "number_of_beds": 1,
+      "amenities": "TV",
+      "cave_rules": "Not suitable for pets",
+      "host_id": 2
+    },
+    {
+      "id": 6,
+      "title": "Dingo Dango",
+      "type": "apartment",
+      "image_path": "../img/cave-dwellings-seattle-2.jpeg",
+      "overview": "The apartment is large and with lots of sunlight.",
+      "location": "Fire Hot",
+      "number_of_guests": 5,
+      "number_of_baths": 1,
+      "number_of_beds": 1,
+      "amenities": "TV",
+      "cave_rules": "Not suitable for pets",
+      "host_id": 2
+    },
+    {
+      "id": 7,
+      "title": "Dingo Dango",
+      "type": "apartment",
+      "image_path": "../img/cave-dwellings-seattle-1.jpeg",
+      "overview": "The apartment is large and with lots of sunlight.",
+      "location": "Fire Hot",
+      "number_of_guests": 5,
+      "number_of_baths": 1,
+      "number_of_beds": 1,
+      "amenities": "TV",
+      "cave_rules": "Not suitable for pets",
+      "host_id": 2
+    },
+    {
+      "id": 8,
+      "title": "Dingo Dango",
+      "type": "apartment",
+      "image_path": "../img/cave-dwellings-china-2.jpg",
+      "overview": "The apartment is large and with lots of sunlight.",
+      "location": "Fire Hot",
+      "number_of_guests": 5,
+      "number_of_baths": 1,
+      "number_of_beds": 1,
+      "amenities": "TV",
+      "cave_rules": "Not suitable for pets",
+      "host_id": 2
+    },
+    {
+      "id": 9,
+      "title": "Dingo Dango",
+      "type": "apartment",
+      "image_path": "../img/cave-dwellings-china-1.jpg",
+      "overview": "The apartment is large and with lots of sunlight.",
+      "location": "Fire Hot",
+      "number_of_guests": 5,
+      "number_of_baths": 1,
+      "number_of_beds": 1,
+      "amenities": "TV",
+      "cave_rules": "Not suitable for pets",
+      "host_id": 2
+    },
+    {
+      "id": 10,
+      "title": "Dingo Dango",
+      "type": "apartment",
+      "image_path": "../img/cave-bedroom.jpg",
       "overview": "The apartment is large and with lots of sunlight.",
       "location": "Fire Hot",
       "number_of_guests": 5,
@@ -64,4 +148,4 @@ const caves = {
   ]
 }
 
-export default TMDB;
+export default caves;

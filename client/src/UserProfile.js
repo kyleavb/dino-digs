@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
+import user_json from './user_json';
 
-const UserProfile = (props) => (
-  <div className="user-profile">
-    <h2>User</h2>
-    <ul className="user-details">
-      <li>user email</li>{' '}
-      <li><a href='#'>Update Profile</a></li>{' '}
-      <li><a href='#'>Delete Profile</a></li>
-    </ul>
-  </div>
-)
+const user = user_json.users;
+
+class UserProfile extends Component {
+  constructor(props){
+    super()
+    this.state = {
+      user,
+    }
+  }
+  render(){
+    return(
+      <div className="user-profile">
+        <h2>Hello Username (placeholder)</h2>
+        <p>Name: Tim H</p>
+        <p>Email: t@t.com </p>
+        <img src="../img/standing-dino.png" alt="picture of user"/>
+      </div>
+    )
+  }
+}
 
 export default UserProfile;

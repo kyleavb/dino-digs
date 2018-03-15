@@ -10,6 +10,7 @@ const users = {
       "name": "Kyle",
       "username": "Big TRex",
       "email": "k@k.com",
+      "profile_pic": "../img/reading-dino.png",
       "password": "password"
     },
     {
@@ -17,6 +18,7 @@ const users = {
       "name": "Tim",
       "username": "Pterodactyl",
       "email": "t@t.com",
+      "profile_pic": "../img/standing-dino.png",
       "password": "password"
     }
   ]

@@ -12,11 +12,13 @@ import Search from './Search'
 import Signup from './Signup'
 import UserProfile from './UserProfile'
 
+
 class App extends Component {
   constructor(){
     super()
     this.state = {
       //state
+
     }
   }
 
@@ -44,7 +46,7 @@ class App extends Component {
             <Route path='/Search' render={() => <Search />} />
             <Route path='/Login' render={() => <Login />} />
             <Route path='/Signup' render={() => <Signup />} />
-            <Route path='/UserProfile' render={() => <UserProfile />}
+            <Route path='/Profile' render={() => <UserProfile />} />
           </div>
         </Router>
       </MuiThemeProvider>
