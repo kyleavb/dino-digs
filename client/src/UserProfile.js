@@ -22,4 +22,4 @@ class UserProfile extends Component {
   }
 }
 
-export default UserProfile;
+export default UserProfile

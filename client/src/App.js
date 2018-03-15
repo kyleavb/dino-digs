@@ -1,16 +1,7 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
-import { AppBar } from 'material-ui'
-import Home from './Home'
-import Login from './Login'
-import Search from './Search'
-import Signup from './Signup'
-import UserProfile from './UserProfile'
+import './App.css'
+import NavBar from './NavBar'
 
 
 class App extends Component {
