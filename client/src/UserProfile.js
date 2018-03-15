@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import user_json from './user_json';
 
 const user = user_json.users;
+// what is going on??
 
 class UserProfile extends Component {
   constructor(props){
