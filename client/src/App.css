@@ -1,6 +1,6 @@
-li{
+.inline{
   display: inline;
-  text-align: center;
+  padding: 20px 10px;
 }
 .App {
   text-align: center;

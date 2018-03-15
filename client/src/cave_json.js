@@ -64,4 +64,4 @@ const caves = {
   ]
 }
 
-export default TMDB;
+export default caves;
