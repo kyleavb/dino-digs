@@ -2,22 +2,22 @@ import React, {Component}  from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
-  Redirect
+  Link
 } from 'react-router-dom';
 import Home from './Home'
 import Login from './Login'
 import Search from './Search'
 import Signup from './Signup'
 import UserProfile from './UserProfile'
-import { AppBar } from 'material-ui'
+// import { AppBar } from 'material-ui'
 
 class NavBar extends Component {
   constructor(props){
     super(props)
     this.state={
-      name: '',
-      email: '',
+      name: 'T-Rex',
+      realName: 'Little Foot',
+      email: 'ApexPred@jurassic.park',
       password: '',
       loggedIn: false,
       redirectTo: null
@@ -40,7 +40,6 @@ class NavBar extends Component {
 
   // handle password - passes the active value into state for password
   handlePasswordChange(e) {
-
     this.setState({ password: e.target.value })
   }
 
@@ -50,9 +49,7 @@ class NavBar extends Component {
   toggleLogin(e){
     console.log(this.state.loggedIn)
     this.setState({
-      name: 'T-Rex',
-      email: 'ApexPred@jurassic.park',
-      password: '',
+
       loggedIn: !this.state.loggedIn,
     })
   }
@@ -61,20 +58,24 @@ class NavBar extends Component {
     var loggin = this.state.loggedIn ? <Link to='/Profile'>Profile</Link> : <Link to='/Login'>Login</Link>
     return(
       <Router>
-        <div>
-          <AppBar title='Dino Diggz'>
-            <nav>
-              <Link to='/'>Home</Link>
-              <Link to='/Search'>Search</Link>
-              {loggin}
-            </nav>
+      <div>
+        <nav>
+          <div className='nav-wrapper  teal darken-3'>
+            <a href='/' className='brand-logo'>Dino Diggz</a>
+            <ul id='nav-mobile' className='right hide-on-med-and-down'>
+              <li><Link to='/'>Home</Link></li>
+              <li><Link to='/Search'>Search</Link></li>
+              <li>{loggin}</li>
+            </ul>
+          </div>
+        </nav>
             <br />
-          </AppBar>
+
           <Route exact path='/' render={() => <Home />} />
           <Route path='/Search' render={() => <Search />} />
           <Route path='/Login' render={() => <Login changeName={this.handleNameChange} changeEmail={this.handleEmailChange} changePassword={this.handlePasswordChange} toggle={this.toggleLogin}/>} />
           <Route path='/Signup' render={() => <Signup  />} />
-          <Route path='/Profile' render={() => <UserProfile name={this.state.name} email={this.state.email} />} />
+          <Route path='/Profile' render={() => <UserProfile real={this.state.realName} name={this.state.name} email={this.state.email} />} />
         </div>
       </Router>
     )
