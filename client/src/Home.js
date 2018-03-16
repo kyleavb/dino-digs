@@ -11,8 +11,10 @@ class Home extends Component {
       <div className='row'>
         <Paper style={style}>
         <div className='col s6 m6 l6 offset-s3 offset-m3 offset-l3 text-bg z-depth-3'>
-            <h1> Welcome to Cave! </h1>
-            <p className='col s8 m8 l8 offset-s2 offset-m2 offset-l2'>Welcome to the most exclusive and robust destination cave rental service.  We offer a myriad of top quality rental options.</p>
+            <h1> Welcome to Dino Diggs! </h1>
+            <h4>Now you're home</h4>
+            <hr/>
+            <p className='col s8 m8 l8 offset-s2 offset-m2 offset-l2'>Welcome to the most exclusive and robust destination cave rental service.  We offer a myriad of top quality rental options, for Dinos Only!  If you are a Cave Person please venture over to our affiliated site Cave B&B.  </p>
             <br/>
           <div className='row'>
             <div className='col s6 m6 l6'>

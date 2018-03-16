@@ -48,7 +48,7 @@ class Search extends Component {
           <div className='col s6 m6 l6 offset-s3 offset-m3 offset-l3 of'>
             <div >
               <label htmlFor ='drop-down'>Select vacation location:</label>
-              <select className='browser-default' name='drop-down' value={this.state.optionsState} onChange={this.dropChange}>
+              <select className='browser-default' name='drop-down' value={this.state.optionsState} onChange={this.handleFilterChange}>
                 <option value="Boulder City">Boulder City</option>
                 <option value="Scavenge Town">Scavenge Town</option>
                 <option value="Club Park">Club Park</option>

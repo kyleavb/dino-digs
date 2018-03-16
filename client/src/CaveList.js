@@ -9,9 +9,9 @@ const CaveList = props => (
       <div className="col s12 m6 l4" key={index}>
         <Card style={{ width: '100%', margin: '0 0 20px 0' }}>
         <CardHeader
-          title="URL Avatar"
-          subtitle="Subtitle"
-          avatar="../img/standing-dino.png"
+          title={cave.type}
+          subtitle= 'Available to Rent!' 
+          avatar="../dino.png"
         />
         <CardMedia className='cave-pic'
           overlay={<CardTitle title={cave.title} subtitle={cave.location} />}
