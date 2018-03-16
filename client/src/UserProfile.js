@@ -6,9 +6,9 @@ class UserProfile extends Component {
     return(
       <div className="user-profile">
         <h2>Hello {this.props.name}</h2>
-        <p>Name: {this.props.real}</p>
-        <p>Email: {this.props.email} </p>
-        <img src="../img/standing-dino.png" alt="pictur-of-user"/>
+        <h2>Name: {this.props.real}</h2>
+        <h2>Email: {this.props.email} </h2>
+        <h2>User Pic: </h2><img src="../img/standing-dino.png" alt="pictur-of-user"/>
       </div>
     )
   }

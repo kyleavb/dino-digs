@@ -7,10 +7,10 @@ const caves = {
   cave: [
     {
       "id": 1,
-      "title": "Get Out!",
+      "title": "Cave in the city!",
       "type": "studio",
       "image_path": "../img/cave-dwellings-la-1.jpeg",
-      "overview": "In a small town in Pebble.",
+      "overview": "In a small town in Pebble. You can reconnect with your dino side!",
       "location": "Boulder City",
       "number_of_guests": 2,
       "number_of_baths": 1,
@@ -24,7 +24,7 @@ const caves = {
       "title": "Movin on up",
       "type": "penthouse",
       "image_path": "../img/cave-dwellings-la-2.jpeg",
-      "overview": "Reconnect with nature and disconnect from technology on your own private deck surrounded by pristine and untouched nature.",
+      "overview": "Reconnect with nature and disconnect from technology on your own private deck surrounded by pristine and untouched nature, you damn dinosaur.",
       "location": "Scavenge Town",
       "number_of_guests": 3,
       "number_of_baths": 2,
