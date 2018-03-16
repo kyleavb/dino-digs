@@ -9,7 +9,7 @@ import Login from './Login'
 import Search from './Search'
 import Signup from './Signup'
 import UserProfile from './UserProfile'
-import { AppBar } from 'material-ui'
+// import { AppBar } from 'material-ui'
 
 class NavBar extends Component {
   constructor(props){
@@ -58,15 +58,19 @@ class NavBar extends Component {
     var loggin = this.state.loggedIn ? <Link to='/Profile'>Profile</Link> : <Link to='/Login'>Login</Link>
     return(
       <Router>
-        <div>
-          <AppBar title='Dino Diggz'>
-            <nav>
-              <Link to='/'>Home</Link>
-              <Link to='/Search'>Search</Link>
-              {loggin}
-            </nav>
+      <div>
+        <nav>
+          <div className='nav-wrapper  teal darken-3'>
+            <a href='/' className='brand-logo'>Dino Diggz</a>
+            <ul id='nav-mobile' className='right hide-on-med-and-down'>
+              <li><Link to='/'>Home</Link></li>
+              <li><Link to='/Search'>Search</Link></li>
+              <li>{loggin}</li>
+            </ul>
+          </div>
+        </nav>
             <br />
-          </AppBar>
+
           <Route exact path='/' render={() => <Home />} />
           <Route path='/Search' render={() => <Search />} />
           <Route path='/Login' render={() => <Login changeName={this.handleNameChange} changeEmail={this.handleEmailChange} changePassword={this.handlePasswordChange} toggle={this.toggleLogin}/>} />

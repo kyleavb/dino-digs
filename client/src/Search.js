@@ -33,17 +33,21 @@ class Search extends Component {
 
   render(){
     return(
-      <div>
-        <h1> Search </h1>
-        <select>
-          <option value="grapefruit">Grapefruit</option>
-          <option value="lime">Lime</option>
-          <option selected value="coconut">Coconut</option>
-          <option value="mango">Mango</option>
-        </select>
-        <label htmlFor="Locations">Locations: </label>
-        <input type='text' name='Locations' value={this.props.filterValue} onChange={this.handleFilterChange} />
-        <CaveList caves={this.state.display} />
+      <div className='row'>
+        <div className='col s6 m6 l6 offset-s3 offset-m3 offset-l3'>
+          <h1> Search </h1>
+          <select>
+            <option value="grapefruit">Grapefruit</option>
+            <option value="lime">Lime</option>
+            <option selected value="coconut">Coconut</option>
+            <option value="mango">Mango</option>
+          </select>
+          <label htmlFor="Locations">Locations: </label>
+          <input type='text' name='Locations' value={this.props.filterValue} onChange={this.handleFilterChange} />
+        </div>
+        <div className='col s12 m12 l12'>
+          <CaveList caves={this.state.display} />
+        </div>
       </div>
     )
   }

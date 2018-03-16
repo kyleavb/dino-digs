@@ -3,22 +3,22 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import FlatButton from 'material-ui/FlatButton';
 
 const CaveList = props => (
-    <div className="inline">
+    <div className="row">
     {props.caves.map((cave, index) =>
-      <div className="inline" key={index}>
-        <Card style={{ width: '30%', margin: '10px' }}>
+      <div className="col s12 m6 l4" key={index}>
+        <Card style={{ width: '100%', margin: '0 0 20px 0' }}>
         <CardHeader
           title="URL Avatar"
           subtitle="Subtitle"
           avatar="../img/standing-dino.png"
         />
-        <CardMedia
+        <CardMedia className='cave-pic'
           overlay={<CardTitle title={cave.title} subtitle={cave.location} />}
         >
           <img src={cave.image_path} />
         </CardMedia>
         <CardTitle title={cave.title} subtitle={cave.location} />
-        <CardText>
+        <CardText style={{ overflow: 'scroll', height: '100px'}}>
           {cave.overview}
           <ul>
             <li>Beds: {cave.number_of_beds}</li>
@@ -29,8 +29,8 @@ const CaveList = props => (
           <p>Cave Rules: {cave.cave_rules}</p>
         </CardText>
         <CardActions>
-          <FlatButton label="Book this location" />
-          <FlatButton label="Contact the host" />
+          <span><FlatButton label="Book here" /></span>
+          <span><FlatButton label="Contact host" /></span>
         </CardActions>
       </Card>
     </div>
