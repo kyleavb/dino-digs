@@ -60,7 +60,7 @@ class NavBar extends Component {
       <Router>
       <div>
         <nav>
-          <div className='nav-wrapper  teal darken-3'>
+          <div className='nav-wrapper teal darken-3'>
             <a href='/' className='brand-logo'>Dino Diggz</a>
             <ul id='nav-mobile' className='right hide-on-med-and-down'>
               <li><Link to='/'>Home</Link></li>

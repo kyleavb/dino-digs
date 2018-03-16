@@ -1,12 +1,24 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'NTR', sans-serif;
   background-color: #bcaaa4;
   text-align: center;
+  color: #212121;
 }
-.cave-list {
-  /* text-align: center; */
+
+h1 {
+  font-family: 'NTR', sans-serif;
+}
+
+.text-bg {
+  padding: 20px;
+  background-color: white;
+}
+
+form {
+  padding-bottom: 20px;
+  color: teal;
 }
 
 .cave-pic {
@@ -18,4 +30,3 @@ body {
 label {
   color: teal;
 }
-

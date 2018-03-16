@@ -1,6 +1,7 @@
 import React from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
+import DatePicker from 'material-ui/DatePicker';
 
 const CaveList = props => (
     <div className="row">
@@ -15,7 +16,7 @@ const CaveList = props => (
         <CardMedia className='cave-pic'
           overlay={<CardTitle title={cave.title} subtitle={cave.location} />}
         >
-          <img src={cave.image_path} />
+          <img src={cave.image_path} alt=''/>
         </CardMedia>
         <CardTitle title={cave.title} subtitle={cave.location} />
         <CardText style={{ overflow: 'scroll', height: '100px'}}>
@@ -29,7 +30,7 @@ const CaveList = props => (
           <p>Cave Rules: {cave.cave_rules}</p>
         </CardText>
         <CardActions>
-          <span><FlatButton label="Book here" /></span>
+          <DatePicker><span><FlatButton label="Book here" /></span></DatePicker>
           <span><FlatButton label="Contact host" /></span>
         </CardActions>
       </Card>
