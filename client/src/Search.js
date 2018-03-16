@@ -32,19 +32,31 @@ class Search extends Component {
   }
 
   render(){
+    // const cavesSelection = Caves.caves.map((cave, index) => {
+    //   <option key={index} value={cave.location}>{cave.location}</option>
+    // )}
+
     return(
+
       <div className='row'>
         <div className='col s6 m6 l6 offset-s3 offset-m3 offset-l3'>
           <h1> Search </h1>
-          <select>
-            <option value="grapefruit">Grapefruit</option>
-            <option value="lime">Lime</option>
-            <option selected value="coconut">Coconut</option>
-            <option value="mango">Mango</option>
-          </select>
-          <label htmlFor="Locations">Locations: </label>
-          <input type='text' name='Locations' value={this.props.filterValue} onChange={this.handleFilterChange} />
-        </div>
+          <label>
+            Select vacation location:
+            <select value={this.props.filterValue} onChange={this.handleFilterChange}>
+              <option value="Boulder City">Boulder City</option>
+              <option value="Scavenge Town">Scavenge Town</option>
+              <option value="Club Park">Club Park</option>
+              <option value="Fire Hot">Fire Hot</option>
+              <option value="Fish good">Fish good</option>
+              <option value="Thunder go boom">Thunder go boom</option>
+              <option value="By the ocean">By the ocean</option>
+            </select>
+          </label>
+       </div>
+        <br/>
+        <label htmlFor="Locations">Search for a Location: </label>
+        <input type='text' name='Locations' value={this.props.filterValue} onChange={this.handleFilterChange} />
         <div className='col s12 m12 l12'>
           <CaveList caves={this.state.display} />
         </div>
